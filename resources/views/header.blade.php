@@ -1,3 +1,8 @@
+<?php
+use App\Http\Controllers\ProductController;
+$total= ProductController::cartItem();
+
+?>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -22,10 +27,10 @@
                 <div class="form-group">
                     <input type="text" name="query" class="form-control search-box" placeholder="Keresés">
                 </div>
-                <button type="submit" class="btn btn-default">Beküldés</button>
+                <button type="submit" class="btn btn-default">Keresés</button>
             </form>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Kosár(0)</a></li>
+                <li><a href="#">Kosár({{$total}})</a></li>
 
             </ul>
         </div><!-- /.navbar-collapse -->

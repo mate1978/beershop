@@ -2,11 +2,11 @@
 @section("content")
     <div class="custom-product">
         <div class="col-sm-4">
-            <a href="#">Filter</a>
+            <a href="#">Szűrés</a>
         </div>
         <div class="col-sm-4">
             <div class="trending-wrapper">
-                <h4>Result for Products</h4>
+                <h4>Találat</h4>
                 @foreach($products as $item)
                     <div class="searched-item">
                         <a href="detail/{{$item['id']}}">
