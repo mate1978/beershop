@@ -12,7 +12,11 @@
             <h4>Részletek: {{$product['description']}}</h4>
             <h4>Típus: {{$product['category']}}</h4>
             <br><br>
+            <form action="/add-to-cart" method="POST">
+                @csrf
+                <input type="hidden" name="product_id" value="{{$product['id']}}">
             <button class="btn btn-primary">Kosárba</button>
+            </form>
             <br><br>
             <button class="btn btn-success">Vásárlás</button>
             <br><br>

@@ -18,9 +18,9 @@
                 <li class=""><a href="#">Rendelések</a></li>
 
             </ul>
-            <form class="navbar-form navbar-left">
+            <form action="/search" class="navbar-form navbar-left">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Keresés">
+                    <input type="text" name="query" class="form-control search-box" placeholder="Keresés">
                 </div>
                 <button type="submit" class="btn btn-default">Beküldés</button>
             </form>
