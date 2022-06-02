@@ -25,15 +25,16 @@
                 </tbody>
             </table>
             <div>
-                <form action="/action_page.php">
+                <form action="/orderplace" method="POST">
+                    @csrf
                     <div class="form-group">
-                        <textarea type="email" placeholder="Adja meg a címét" class="form-control"></textarea>
+                        <textarea name="address" placeholder="Adja meg a címét" class="form-control"></textarea>
                     </div>
                     <div class="form-group">
                         <label for="pwd">Fizetési mód: </label> <br> <br>
-                        <input type="radio" name="payment"><span>Átutalás</span> <br> <br>
-                        <input type="radio" name="payment"><span>Online fizetés</span> <br> <br>
-                        <input type="radio" name="payment"><span>Átvételkor a futárnak</span> <br> <br>
+                        <input type="radio" value="cash" name="payment"><span>Átutalás</span> <br> <br>
+                        <input type="radio" value="cash" name="payment"><span>Online fizetés</span> <br> <br>
+                        <input type="radio" value="cash" name="payment"><span>Átvételkor a futárnak</span> <br> <br>
 
                     </div>
 
