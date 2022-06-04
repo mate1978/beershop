@@ -28,6 +28,10 @@
     img.slider-img{
         height: 400px !important;
     }
+    img.img-fluid{
+        float:left;
+        width: 400px;
+    }
     .custom-product{
         height: 600px
     }

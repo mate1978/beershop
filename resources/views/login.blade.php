@@ -19,6 +19,7 @@
 
                     <button type="submit" class="btn btn-primary">Bejelentkezés</button>
                 </form>
+                <br><br>
 
             </div>
         </div>

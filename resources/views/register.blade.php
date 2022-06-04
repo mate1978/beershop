@@ -23,6 +23,7 @@
 
                     <button type="submit" class="btn btn-primary">Regisztráció</button>
                 </form>
+                <br><br>
 
             </div>
         </div>
