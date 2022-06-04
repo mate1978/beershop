@@ -32,9 +32,9 @@
                     </div>
                     <div class="form-group">
                         <label for="pwd">Fizetési mód: </label> <br> <br>
-                        <input type="radio" value="cash" name="payment"><span>Átutalás</span> <br> <br>
-                        <input type="radio" value="cash" name="payment"><span>Online fizetés</span> <br> <br>
-                        <input type="radio" value="cash" name="payment"><span>Átvételkor a futárnak</span> <br> <br>
+                        <input type="radio" value="Átutalás" name="payment"><span>Átutalás</span> <br> <br>
+                        <input type="radio" value="Online fizetés" name="payment"><span>Online fizetés</span> <br> <br>
+                        <input type="radio" value="Átvételkor a futárnak" name="payment"><span>Átvételkor a futárnak</span> <br> <br>
 
                     </div>
 

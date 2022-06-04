@@ -74,7 +74,6 @@ class ProductController extends Controller
         $total= $products= DB::table('cart')
             ->join('products','cart.product_id','=','products.id')
             ->where('cart.user_id',$userId)
-            ->select('products.*','cart.id as cart_id')
             ->sum('products.price');
 
         return view('ordernow', ['total'=>$total]);
@@ -89,9 +88,9 @@ class ProductController extends Controller
             $order= new order;
             $order->product_id=$cart['product_id'];
             $order->user_id=$cart['user_id'];
-            $order->status="pending";
+            $order->status="folyamatban";
             $order->payment_method=$req->payment;
-            $order->payment_status="pending";
+            $order->payment_status="folyamatban";
             $order->address=$req->address;
             $order->save();
             Cart::where('user_id',$userId)->delete();
@@ -99,5 +98,15 @@ class ProductController extends Controller
         }
         $req->input();
         return redirect('/');
+    }
+    function myOrders()
+    {
+        $userId=Session::get('user')['id'];
+        $orders= DB::table('orders')
+            ->join('products','orders.product_id','=','products.id')
+            ->where('orders.user_id',$userId)
+            ->get();
+
+         return view('myorders', ['orders'=>$orders]);
     }
 }
