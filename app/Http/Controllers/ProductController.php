@@ -99,6 +99,7 @@ class ProductController extends Controller
         $req->input();
         return redirect('/');
     }
+
     function myOrders()
     {
         $userId=Session::get('user')['id'];
@@ -107,6 +108,7 @@ class ProductController extends Controller
             ->where('orders.user_id',$userId)
             ->get();
 
-         return view('myorders', ['orders'=>$orders]);
+        return view('myorders', ['orders'=>$orders]);
     }
+
 }

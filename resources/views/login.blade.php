@@ -17,7 +17,7 @@
                         <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Jelszó megadása">
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Beküldés</button>
+                    <button type="submit" class="btn btn-primary">Bejelentkezés</button>
                 </form>
 
             </div>

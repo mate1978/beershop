@@ -18,7 +18,12 @@
             <button class="btn btn-primary">Kosárba</button>
             </form>
             <br><br>
-            <button class="btn btn-success">Vásárlás</button>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
             <br><br>
         </div>
     </div>
