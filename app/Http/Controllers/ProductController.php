@@ -83,6 +83,12 @@ class ProductController extends Controller
     {
         $userId=Session::get('user')['id'];
         $allCart= Cart::where('user_id',$userId)->get();
+
+        if(empty($req->payment) || empty($req->address))
+        {
+            return "A cím és a fizetési mód nem lehet üres!";
+        }
+
         foreach ($allCart as $cart)
         {
             $order= new order;
