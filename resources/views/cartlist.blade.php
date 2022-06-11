@@ -30,6 +30,7 @@
             </div>
         <div class="trending-wrapper">
                 <a class="btn btn-success" href="ordernow">Rendelés</a> <br> <br>
+
         </div>
         </div>
     </div>
