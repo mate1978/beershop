@@ -7,7 +7,7 @@ use App\Models\Product;
 use App\Models\Cart;
 use App\Models\Orders;
 
-use Session;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\DB;
 
 class ProductController extends Controller

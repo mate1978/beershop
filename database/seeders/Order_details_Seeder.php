@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Order_details;
+use Database\Factories\Order_detailsFactory;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -17,6 +19,8 @@ class order_details_Seeder extends Seeder
      */
     public function run()
     {
-
+        Order_details::factory()
+            ->count(50)
+            ->create();
     }
 }

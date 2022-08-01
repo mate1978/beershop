@@ -15,9 +15,11 @@ class payment_type_Seeder extends Seeder
      */
     public function run()
     {
-        $types = ['transfer', 'cash', 'mobile_payment','credit card'];
-        DB::table('payment_type')->insert(
-            ['type_name'=>$types[random_int(0,3)],]
-        );
+        DB::table('payment_types')->insert([
+            ['type_name'=>'transfer'],
+            ['type_name'=>'cash'],
+            ['type_name'=>'mobile_payment'],
+            ['type_name'=>'credit card'],
+        ]);
     }
 }

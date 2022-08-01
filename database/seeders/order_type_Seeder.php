@@ -15,7 +15,15 @@ class order_type_Seeder extends Seeder
      */
     public function run()
     {
-
+        DB::table('order_types')->insert([
+            [
+            'type_name'=>'Pick Pack Pont'
+        ],[
+            'type_name'=>'Home delivery'
+            ],[
+                'type_name'=>'on_shop'
+            ]
+            ]);
 
     }
 }

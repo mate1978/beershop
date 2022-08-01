@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('cart', function (Blueprint $table) {
+        Schema::create('carts', function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(\App\Models\Product::class)->constrained();
             $table->foreignIdFor(\App\Models\User::class)->constrained();

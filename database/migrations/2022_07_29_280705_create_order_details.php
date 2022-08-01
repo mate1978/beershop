@@ -18,9 +18,8 @@ return new class extends Migration
             $table->foreignIdFor(\App\Models\Orders::class)->constrained();
             $table->foreignIdFor(\App\Models\Product::class)->constrained();
             $table->integer('quantity');
-            $table->integer('per/price');
-            $table->integer('price');
-            $table->timestamps();
+            $table->integer('UnitPrice');
+            $table->integer('price')->virtualAs('quantity*UnitPrice');
         });
     }
 
