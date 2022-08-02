@@ -3,11 +3,11 @@
 namespace Database\Seeders;
 
 use App\Models\Product;
-use App\Models\stock;
+use App\Models\Stock;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class stock_Seeder extends Seeder
+class StockSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,7 +16,7 @@ class stock_Seeder extends Seeder
      */
     public function run()
     {
-        stock::factory()
+        Stock::factory()
             ->count(Count(Product::all()))
             ->create();
 
